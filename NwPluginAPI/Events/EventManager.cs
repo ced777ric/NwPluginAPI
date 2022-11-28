@@ -404,7 +404,7 @@ namespace PluginAPI.Events
 					object result;
 					try
 					{
-						result = invoker.Invoke(ev.RegenerateParameters(invoker, args));
+						result = invoker.Invoke(ev.RegenerateParameters(invoker, args.ToArray() ));
 					}
 					catch (Exception ex)
 					{
