@@ -26,10 +26,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Log.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: Log
     path: ../NwPluginAPI/Core/Log.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -70,10 +70,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Log.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: DisableBetterColors
     path: ../NwPluginAPI/Core/Log.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -105,10 +105,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Log.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: UnityEditor
     path: ../NwPluginAPI/Core/Log.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -126,7 +126,7 @@ items:
   - Public
   - Shared
 - uid: PluginAPI.Core.Log.DebugMode
-  commentId: F:PluginAPI.Core.Log.DebugMode
+  commentId: P:PluginAPI.Core.Log.DebugMode
   id: DebugMode
   parent: PluginAPI.Core.Log
   langs:
@@ -135,31 +135,35 @@ items:
   name: DebugMode
   nameWithType: Log.DebugMode
   fullName: PluginAPI.Core.Log.DebugMode
-  type: Field
+  type: Property
   source:
     remote:
       path: NwPluginAPI/Core/Log.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: DebugMode
     path: ../NwPluginAPI/Core/Log.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
   summary: "\nWhether or not to enable debug mode in logs.\n"
   example: []
   syntax:
-    content: public static bool DebugMode
+    content: public static bool DebugMode { get; }
+    parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Shared DebugMode As Boolean
+    content.vb: Public Shared ReadOnly Property DebugMode As Boolean
+  overload: PluginAPI.Core.Log.DebugMode*
   modifiers.csharp:
   - public
   - static
+  - get
   modifiers.vb:
   - Public
   - Shared
+  - ReadOnly
 - uid: PluginAPI.Core.Log.Debug(System.String,System.String)
   commentId: M:PluginAPI.Core.Log.Debug(System.String,System.String)
   id: Debug(System.String,System.String)
@@ -175,10 +179,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Log.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: Debug
     path: ../NwPluginAPI/Core/Log.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -216,10 +220,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Log.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: Debug
     path: ../NwPluginAPI/Core/Log.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -260,10 +264,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Log.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: Info
     path: ../NwPluginAPI/Core/Log.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -301,10 +305,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Log.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: Warning
     path: ../NwPluginAPI/Core/Log.cs
-    startLine: 63
+    startLine: 64
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -342,10 +346,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Log.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: Error
     path: ../NwPluginAPI/Core/Log.cs
-    startLine: 70
+    startLine: 71
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -383,10 +387,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Log.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: Raw
     path: ../NwPluginAPI/Core/Log.cs
-    startLine: 77
+    startLine: 78
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -424,10 +428,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Log.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: FormatText
     path: ../NwPluginAPI/Core/Log.cs
-    startLine: 94
+    startLine: 95
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -761,6 +765,11 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: PluginAPI.Core.Log.DebugMode*
+  commentId: Overload:PluginAPI.Core.Log.DebugMode
+  name: DebugMode
+  nameWithType: Log.DebugMode
+  fullName: PluginAPI.Core.Log.DebugMode
 - uid: PluginAPI.Core.Log.Debug*
   commentId: Overload:PluginAPI.Core.Log.Debug
   name: Debug

@@ -22,10 +22,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Statistics.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: Statistics
     path: ../NwPluginAPI/Core/Statistics.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -66,10 +66,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Statistics.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: TotalConnectedPlayers
     path: ../NwPluginAPI/Core/Statistics.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -105,10 +105,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Statistics.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: TotalRejectedConnections
     path: ../NwPluginAPI/Core/Statistics.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -144,10 +144,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Statistics.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: PeakPlayers
     path: ../NwPluginAPI/Core/Statistics.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -179,10 +179,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Statistics.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: TotalRoundrestarts
     path: ../NwPluginAPI/Core/Statistics.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -218,10 +218,10 @@ items:
     remote:
       path: NwPluginAPI/Core/Statistics.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: FastestEndedRound
     path: ../NwPluginAPI/Core/Statistics.cs
-    startLine: 35
+    startLine: 36
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
@@ -253,28 +253,26 @@ items:
     remote:
       path: NwPluginAPI/Core/Statistics.cs
       branch: master
-      repo: git@github.com:northwood-studios/NwPluginAPI.git
+      repo: https://github.com/northwood-studios/NwPluginAPI.git
     id: CurrentRound
     path: ../NwPluginAPI/Core/Statistics.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - PluginAPI
   namespace: PluginAPI.Core
   summary: "\nStatistics related to current round.\n"
   example: []
   syntax:
-    content: public static readonly Statistics.Round CurrentRound
+    content: public static Statistics.Round CurrentRound
     return:
       type: PluginAPI.Core.Statistics.Round
-    content.vb: Public Shared ReadOnly CurrentRound As Statistics.Round
+    content.vb: Public Shared CurrentRound As Statistics.Round
   modifiers.csharp:
   - public
   - static
-  - readonly
   modifiers.vb:
   - Public
   - Shared
-  - ReadOnly
 references:
 - uid: PluginAPI.Core
   commentId: N:PluginAPI.Core
